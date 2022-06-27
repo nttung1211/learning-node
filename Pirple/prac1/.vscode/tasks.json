@@ -1,0 +1,31 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Node",
+      "type": "shell",
+      "command": "node .",
+      "options": {
+        "env": {
+          // "NODE_ENV": "staging",
+          "NODE_DEBUG": "server",
+          // "TZ": "Asia/Ho_Chi_Minh"
+        },
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "group":{
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+- origin is the combination of protocol, hostname and port
+- by default browser only allow to make request from the same origin
+  ex: we can not make a request to facebook while browsing google
+- It is the browser that does the origin policy
+- request is readable stream 
+- response is writable stream on server but readable on client
+- the data sent in the request is receive as a buffer
